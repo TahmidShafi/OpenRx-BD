@@ -10,22 +10,18 @@ authors = [{ name = "OpenRx-BD Team" }]
 readme = "AGENT.md"
 requires-python = ">=3.11"
 dependencies = [
+    "datasets",
+    "polars",
     "pydantic>=2.0",
-    "pandas>=2.0",
-    "pyarrow>=14.0",
-    "rapidfuzz>=3.0",
-    "tqdm>=4.60",
+    "rapidfuzz",
+    "fastapi",
+    "uvicorn",
+    "pytest",
+    "typer",
+    "pyarrow",
 ]
-
-[project.optional-dependencies]
-dev = [
-    "pytest>=8.0",
-]
-
-[project.scripts]
-openrx-bd = "openrx_bd.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
+pythonpath = ["."]
 addopts = "-v --tb=short"
