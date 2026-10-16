@@ -1,0 +1,30 @@
+# OpenRx-BD License-Safe & Leakage-Proof .gitignore
+
+# Data directories (Strictly forbidden from being committed)
+data/raw/
+data/splits/
+*.parquet
+*.csv
+medicine.csv
+
+# Python environment
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

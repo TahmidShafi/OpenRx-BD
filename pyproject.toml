@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openrx-bd"
+version = "0.1.0"
+description = "Debate-hardened prescription cost-optimization engine for Bangladesh pharmaceuticals"
+authors = [{ name = "OpenRx-BD Team" }]
+readme = "AGENT.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0",
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+    "rapidfuzz>=3.0",
+    "tqdm>=4.60",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+openrx-bd = "openrx_bd.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
