@@ -28,3 +28,9 @@ htmlcov/
 .idea/
 .DS_Store
 Thumbs.db
+
+# AI Guardrails (Kept locally for IDE agent control, not tracked in repo)
+AGENT.md
+AGENTS.md
+.agents/
+.antigravity/
