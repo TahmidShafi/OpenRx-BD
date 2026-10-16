@@ -1,0 +1,16 @@
+{
+  "blind_test_file": "data/splits/blind_test.parquet",
+  "sha256": "4989e748835ad34b8a9474dc53818b437180c1ec0439c6df7161a2c331366614",
+  "row_count": 6319,
+  "seed": 20261016,
+  "locked_at_utc": "2026-10-16T12:28:57.893320+00:00",
+  "summary": {
+    "total_non_null_rows": 21672,
+    "unseen_template_holdout_rows": 486,
+    "dev_split_rows": 14867,
+    "blind_test_rows": 6319,
+    "holdout_pct": 2.24,
+    "dev_pct_of_remaining": 70.17,
+    "blind_pct_of_remaining": 29.83
+  }
+}
