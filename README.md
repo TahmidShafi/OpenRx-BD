@@ -34,6 +34,33 @@
 
 ---
 
+## 🖥️ Interactive Web UI Dashboard
+
+OpenRx-BD features a modern, responsive dark-mode dashboard (served directly at `http://localhost:8000`) designed for clinical researchers, pharmacists, and engineers:
+
+### 1. Multi-Drug Regimen Optimizer & Polypharmacy Audit
+Interactive prescription builder with automated Drug-Drug Interaction (DDI) detection, Narrow Therapeutic Index (NTI) locks, and retail dispensing economics (loose cut-strip vs container knapsack DP).
+
+<p align="center">
+  <img src="assets/screenshots/regimen_optimizer_ui.jpg" alt="Regimen Optimizer Dashboard" width="95%" />
+</p>
+
+### 2. Live AST Grammar & Invariant Inspector
+Live developer playground for testing raw packaging strings against grammatical AST token patterns, container volume reconciliations, and $|U \times Q - P| \le 0.05$ property invariants.
+
+<p align="center">
+  <img src="assets/screenshots/ast_inspector_ui.jpg" alt="AST Inspector Sandbox" width="95%" />
+</p>
+
+### 3. Cryptographically Frozen Blind Benchmark Report
+Comprehensive benchmark reporting across 3 disjoint partitions (Dev, Blind Test, and Unseen Tail Holdout) alongside within-equivalence-group market price dispersion analytics.
+
+<p align="center">
+  <img src="assets/screenshots/blind_benchmark_ui.jpg" alt="Blind Benchmark Report" width="95%" />
+</p>
+
+---
+
 ## 🚀 Core Engineering Innovations
 
 ### 1. Robust AST Grammar Parser & Cross-Column Reconciliation
@@ -120,6 +147,8 @@ Interactive API Swagger documentation is available at [http://localhost:8000/doc
 
 ```text
 OpenRx-BD/
+├── assets/
+│   └── screenshots/          # Web dashboard UI screenshots
 ├── data/
 │   ├── raw/                  # Raw parquet datasets (git-ignored)
 │   └── splits/               # Immutable dev and blind test splits (git-ignored)
