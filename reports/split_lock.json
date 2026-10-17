@@ -3,7 +3,7 @@
   "sha256": "4989e748835ad34b8a9474dc53818b437180c1ec0439c6df7161a2c331366614",
   "row_count": 6319,
   "seed": 20261016,
-  "locked_at_utc": "2026-10-16T12:29:25.912968+00:00",
+  "locked_at_utc": "2026-10-17T13:12:09.514901+00:00",
   "summary": {
     "total_non_null_rows": 21672,
     "unseen_template_holdout_rows": 486,

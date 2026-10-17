@@ -1,0 +1,82 @@
+{
+  "benchmark_timestamp_utc": "2026-10-17T13:16:27.875121+00:00",
+  "cryptographic_verification": {
+    "blind_test_sha256": "4989e748835ad34b8a9474dc53818b437180c1ec0439c6df7161a2c331366614",
+    "status": "VERIFIED_UNTOUCHED"
+  },
+  "splits": {
+    "dev_split": {
+      "split_name": "dev_split",
+      "split_path": "data\\splits\\dev_split.parquet",
+      "total_rows": 14867,
+      "parsed_valid": 14450,
+      "coverage_pct": 97.2,
+      "invariant_violations": 411,
+      "invariant_violation_pct": 2.76,
+      "abstain_total": 6,
+      "abstain_pct": 0.04,
+      "abstain_breakdown": {
+        "unsupported_template": 6,
+        "null_or_empty_container": 0
+      },
+      "total_skus_parsed": 15793,
+      "skus_invariant_checked": 9941,
+      "skus_invariant_passed": 9527,
+      "invariant_check_rate_pct": 62.95,
+      "row_invariant_check_rate_pct": 65.07,
+      "invariant_pass_rate_pct": 95.84
+    },
+    "blind_test": {
+      "split_name": "blind_test",
+      "split_path": "data\\splits\\blind_test.parquet",
+      "total_rows": 6319,
+      "parsed_valid": 6140,
+      "coverage_pct": 97.17,
+      "invariant_violations": 177,
+      "invariant_violation_pct": 2.8,
+      "abstain_total": 2,
+      "abstain_pct": 0.03,
+      "abstain_breakdown": {
+        "unsupported_template": 2,
+        "null_or_empty_container": 0
+      },
+      "total_skus_parsed": 6681,
+      "skus_invariant_checked": 4246,
+      "skus_invariant_passed": 4067,
+      "invariant_check_rate_pct": 63.55,
+      "row_invariant_check_rate_pct": 65.44,
+      "invariant_pass_rate_pct": 95.78
+    },
+    "unseen_template_holdout": {
+      "split_name": "unseen_template_holdout",
+      "split_path": "data\\splits\\unseen_template_holdout.parquet",
+      "total_rows": 486,
+      "parsed_valid": 457,
+      "coverage_pct": 94.03,
+      "invariant_violations": 1,
+      "invariant_violation_pct": 0.21,
+      "abstain_total": 28,
+      "abstain_pct": 5.76,
+      "abstain_breakdown": {
+        "unsupported_template": 28,
+        "null_or_empty_container": 0
+      },
+      "total_skus_parsed": 615,
+      "skus_invariant_checked": 168,
+      "skus_invariant_passed": 165,
+      "invariant_check_rate_pct": 27.32,
+      "row_invariant_check_rate_pct": 25.93,
+      "invariant_pass_rate_pct": 98.21
+    }
+  },
+  "market_price_dispersion": {
+    "total_equivalence_groups_indexed": 2931,
+    "multi_brand_groups_evaluated": 1908,
+    "median_max_to_min_price_ratio": 1.338,
+    "q25_price_ratio": 1.048,
+    "q75_price_ratio": 2.0,
+    "iqr_price_ratio": 0.952,
+    "groups_with_price_spread_gt_25_pct_count": 1082,
+    "groups_with_price_spread_gt_25_pct_rate": 56.71
+  }
+}

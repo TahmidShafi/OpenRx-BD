@@ -13,9 +13,9 @@ from openrx_bd.split import (
 )
 
 
-def test_split_generation_and_disjointness():
+def test_split_generation_and_disjointness(tmp_path):
     """Verify that train/blind splits are generated and have zero record leakage."""
-    dev_path, blind_path = create_deterministic_splits()
+    dev_path, blind_path = create_deterministic_splits(dest_dir=tmp_path)
 
     assert dev_path.exists()
     assert blind_path.exists()
